@@ -1,15 +1,19 @@
 import '../styles/components/Card.css'
-import logements from '../utils/logements.json'
+import { Link } from 'react-router-dom'
 
-export default function Card() {
-  const accomodation = logements[0].title;
-  const src = logements[0].pictures[0];
+export default function Card(props) {
+  const link = props.link;
+  const title = props.title;
+  const src = props.src;
+  const key = props.id;
 
   return (
-    <div className='card'>
-      <div className='background'></div>
-      <span>{accomodation}</span>
-      <img src={src} alt={accomodation}></img>
+    <div className='card' key={key}>
+      <Link to={`/logement-${link}`}>
+        <div></div>
+        <span>{title}</span>
+        <img src={src} alt={title}></img>
+      </Link>
     </div>
   )
 }
