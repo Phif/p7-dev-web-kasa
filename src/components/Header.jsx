@@ -1,15 +1,21 @@
+import React from 'react'
 import '../styles/components/Header.css'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <nav className='header'>
+    <header>
       <Link to='/'><img className='logo' src={logo} alt='Kasa'></img></Link>
-      <div className='header-right'>
-        <Link to='/'>Accueil</Link>
-        <Link to='/about'>A propos</Link>
-      </div>
-    </nav>
+      <nav>
+        <NavLink to='/'>
+          Accueil
+        </NavLink>
+        <NavLink to='/about'>
+          A propos
+        </NavLink>
+      </nav>
+    </header>
   )
 }
