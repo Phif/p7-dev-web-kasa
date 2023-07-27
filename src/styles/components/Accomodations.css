@@ -4,7 +4,7 @@
   width: 100%;
   border-radius: 25px;
   margin-top: 43px;
-  background-color: #f6f6f6;
+  background-color: var(--secondary-color);
   padding: 50px;
   gap: 60px;
 }

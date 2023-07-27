@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #ff6060;
+  --primary-color-accent: #c33333;
+  --secondary-color: #f6f6f6
+}
+
 * {
     box-sizing: border-box;
     font-family: Montserrat;
