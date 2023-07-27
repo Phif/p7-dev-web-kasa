@@ -5,12 +5,9 @@ import Card from './Card'
 export default function Accomodations() {
   return (
     <div className='accomodations'>
-      {/* <Card link={logements[0].id} src={logements[0].pictures[0]} title={logements[0].title}/>
-      <Card link={logements[0].id} src={logements[0].pictures[0]} title={logements[0].title}/>
-      <Card link={logements[0].id} src={logements[0].pictures[0]} title={logements[0].title}/> */}
       {
-        logements.map((logements, index) => (
-          <Card link={logements.id} src={logements.pictures[0]} title={logements.title} key={logements.id}/>
+        logements.map((logement) => (
+          <Card id={logement.id} src={logement.pictures[0]} title={logement.title} key={logement.id} />
         ))
       }
     </div>

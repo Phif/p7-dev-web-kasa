@@ -1,0 +1,41 @@
+.collapse {
+  font-size: 24px;
+}
+
+.collapse-header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  color: white;
+}
+
+.collapse-header:hover {
+  background-color: #e55050;
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-radius: 0 0 5px 5px;
+  background-color: #f6f6f6;
+}
+
+.content-inner {
+  padding: 20px;
+  font-weight: 400;
+  color: #ff6060;
+}
+
+.collapse-arrow {
+  height: 32px;
+  transition: transform 0.3s ease;
+}
