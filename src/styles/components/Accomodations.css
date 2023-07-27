@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   width: 100%;
   border-radius: 25px;
-  margin-top: 43px;
+  margin: 50px 0;
   background-color: var(--secondary-color);
   padding: 50px;
   gap: 60px;

@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Card(props) {
   const id = props.id;
-  const key = props.id;
   const title = props.title;
   const src = props.src;
 
   return (
-    <div className='card' key={key}>
+    <div className='card' key={id}>
       <Link to={`/${id}`}>
         <div></div>
         <span>{title}</span>
