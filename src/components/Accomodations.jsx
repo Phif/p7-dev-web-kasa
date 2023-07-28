@@ -7,7 +7,7 @@ export default function Accomodations() {
     <div className='accomodations'>
       {
         logements.map((logement) => (
-          <Card id={/* logement.id */"logement"} src={logement.pictures[0]} title={logement.title} key={logement.id} />
+          <Card id={/* logement.id */"accomodation"} src={logement.pictures[0]} title={logement.title} key={logement.id} />
         ))
       }
     </div>

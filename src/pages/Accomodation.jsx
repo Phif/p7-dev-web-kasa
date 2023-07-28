@@ -9,7 +9,7 @@ export default function Accomodation() {
     <div className='accomodation'>
       <Header />
       <Carousel />
-      <Hero />
+      {/* <Hero /> */}
     </div>
   )
 }
