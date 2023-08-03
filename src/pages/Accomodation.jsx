@@ -6,18 +6,20 @@ import logements from '../utils/logements.json'
 
 export default function Accomodation() {
   // const id = window.location.pathname.split('/')[2];
-  const id = "b4c67936";
+  const id = "c67ab8a7";
   const index = findIndexById(logements, id);
   const images = logements[index].pictures;
   const title = logements[index].title;
   const location = logements[index].location;
-  
+  const host = logements[index].host;
+  const tags = logements[index].tags;
+
 
   return (
     <div className='accomodation'>
       <Header />
       <Carousel images={images} />
-      <Hero title={title} location={location} />
+      <Hero title={title} location={location} host={host} tags={tags} />
     </div>
   )
 }

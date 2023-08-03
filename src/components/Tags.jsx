@@ -1,17 +1,15 @@
 import '../styles/components/Tags.css'
-import logements from '../utils/logements.json'
 
-export default function Tag() {
-  const tags = logements[0].tags;
-
+export default function Tags({ tags }) {
   return (
     <div className='tags-container'>
       {
         tags.map((tag, index) => (
-          <div className='tag' key={index}>
+          <div className='tag' key={index} >
             <span>{tag}</span>
           </div>
         ))
       }
     </div>
-)}
+  )
+}

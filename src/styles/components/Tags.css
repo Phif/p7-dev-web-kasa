@@ -10,10 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 115px;
+  min-width: 115px;
   height: 25px;
   border-radius: 10px;
   background-color: #ff6060;
+  padding: 0 10px;
 }
 
 .tag span {
