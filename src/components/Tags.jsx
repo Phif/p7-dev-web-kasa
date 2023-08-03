@@ -1,10 +1,10 @@
 import '../styles/components/Tags.css'
 
-export default function Tags({ tags }) {
+export default function Tags(props) {
   return (
     <div className='tags-container'>
       {
-        tags.map((tag, index) => (
+        props.tags.map((tag, index) => (
           <div className='tag' key={index} >
             <span>{tag}</span>
           </div>

@@ -2,8 +2,8 @@ import '../styles/pages/About.css';
 import Header from "../components/Header";
 import Background from "../components/Background";
 import Collapse from "../components/Collapse";
-import about from '../utils/about.json';
 import background from '../assets/bgAbout.webp';
+import about from '../utils/about.json';
 
 export default function About() {
   return (

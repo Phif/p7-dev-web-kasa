@@ -1,3 +1,7 @@
+.notfound {
+  margin-bottom: 30px;
+}
+
 .notfound-container {
   display: flex;
   flex-direction: column;

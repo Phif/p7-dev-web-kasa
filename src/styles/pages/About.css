@@ -1,7 +1,11 @@
+.about {
+  margin-bottom: 30px;
+}
+
 .collapse-container {
   max-width: 1023px;
   display: flex;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   flex-flow: column nowrap;
   gap: 30px;
 }

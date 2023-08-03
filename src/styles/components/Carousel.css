@@ -1,4 +1,5 @@
 .carousel-container {
+  margin-top: 25px;
   position: relative;
   width: 1240px;
   height: 415px;
@@ -48,6 +49,21 @@
 .next-button {
   position: absolute;
   right: 10px;
+}
+
+.prev-button img, .next-button img {
+    transition: transform 0.3s ease;
+
+}
+.prev-button:hover img, .next-button:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.prev-button:active img, .next-button:active img {
+  transform: scale(1.2);
+  transition: transform 0.05s ease;
+
 }
 
 .carousel-counter {

@@ -1,0 +1,9 @@
+.rating {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.rating img {
+  height: 24px;
+}

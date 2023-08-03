@@ -1,7 +1,7 @@
 import '../styles/pages/Home.css';
 import Header from "../components/Header";
 import Background from "../components/Background";
-import Accomodations from "../components/Accomodations";
+import CardList from "../components/CardList";
 import background from '../assets/bgHome.webp';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <div className='home'>
       <Header />
       <Background src={background} text="Chez vous, partout et ailleurs"/>
-      <Accomodations />
+      <CardList />
     </div>
   )
 }

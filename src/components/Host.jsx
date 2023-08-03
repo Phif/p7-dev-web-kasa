@@ -1,10 +1,10 @@
 import '../styles/components/Host.css'
 
-export default function Host({ host }) {
+export default function Host(props) {
   return (
     <div className="host">
-      <p>{host.name}</p>
-      <img src={host.picture} alt="Host avatar" />
+      <p>{props.host.name}</p>
+      <img src={props.host.picture} alt="Host avatar" />
     </div>
   )
 }

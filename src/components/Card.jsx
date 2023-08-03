@@ -8,7 +8,7 @@ export default function Card(props) {
 
   return (
     <div className='card' key={id}>
-      <Link to={`/${id}`}>
+      <Link to={`/accomodation/${id}`}>
         <div></div>
         <span>{title}</span>
         <img src={src} alt={title}></img>

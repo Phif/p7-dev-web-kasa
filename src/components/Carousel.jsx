@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import arrowLeft from '../assets/arrowLeftD.svg'
 import arrowRight from '../assets/arrowRightD.svg'
 
-export default function Carousel({ images }) {
+export default function Carousel(props) {
+  const { images } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {

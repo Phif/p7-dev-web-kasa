@@ -1,5 +1,5 @@
-import { useState, useRef } from 'react';
 import '../styles/components/Collapse.css'
+import { useState, useRef } from 'react';
 import arrowDownD from '../assets/arrowDownD.svg';
 
 export default function Collapse(props) {
@@ -25,7 +25,15 @@ export default function Collapse(props) {
         <img className="collapse-arrow" src={arrowDownD} alt="arrow" style={isOpen ? { transform: 'rotate(180deg)' } : {}} />
       </div>
       <div className="collapse-content" ref={contentRef}>
-        <div className="content-inner">{content}</div>
+        <div className="content-inner">
+          {typeof content === 'string' && content}
+          
+          {Array.isArray(content) && content.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+
+          {(!Array.isArray(content) && typeof content !== 'string') && content}
+        </div>
       </div>
     </div>
   )
