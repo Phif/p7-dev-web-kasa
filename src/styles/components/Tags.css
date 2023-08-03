@@ -7,6 +7,9 @@
 }
 
 .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 115px;
   height: 25px;
   border-radius: 10px;

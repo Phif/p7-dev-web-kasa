@@ -1,0 +1,58 @@
+.carousel-container {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  display: block;
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+}
+
+.carousel-nav button {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-button {
+  position: absolute;
+  left: 10px;
+}
+
+.next-button {
+  position: absolute;
+  right: 10px;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  color: white;
+}

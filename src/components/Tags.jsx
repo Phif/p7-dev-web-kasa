@@ -1,4 +1,4 @@
-import '../styles/components/Tag.css'
+import '../styles/components/Tags.css'
 import logements from '../utils/logements.json'
 
 export default function Tag() {
