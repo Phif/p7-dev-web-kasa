@@ -1,5 +1,6 @@
 import '../styles/pages/Accomodation.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
@@ -7,6 +8,22 @@ import logements from '../utils/logements.json'
 
 export default function Accomodation() {
   const { id } = useParams();
+  const navigate = useNavigate();
+  
+  const logement = logements.find(logements => logements.id.toString() === id);
+  useEffect(() => {
+    if (!logement) {
+      navigate('/not-found', { replace: true }); 
+    }
+  }, [logement, navigate]);
+
+  if (!logement) {
+    return null;
+  }
+
+
+
+
 
   const index = findIndexById(logements, id);
   const images = logements[index].pictures;
