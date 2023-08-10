@@ -22,11 +22,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   margin: auto;
-  padding: 40px 100px 0 100px;
+  padding: 40px 100px;
   max-width: 1440px;
 
   color: var(--primary-color);
   list-style-type: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
 }
 
 code {

@@ -2,17 +2,13 @@ import '../styles/components/Card.css'
 import { Link } from 'react-router-dom'
 
 export default function Card(props) {
-  const id = props.id;
-  const title = props.title;
-  const src = props.src;
-
+  const { id, title, src } = props;
+  
   return (
-    <div className='card' key={id}>
-      <Link to={`/accomodation/${id}`}>
-        <div></div>
-        <span>{title}</span>
-        <img src={src} alt={title}></img>
-      </Link>
-    </div>
-  )
-}
+    <Link to={`/accomodation/${id}`} className="card" key={id} style={{ backgroundImage: `url(${src})` }}>
+    <div className="card-overlay"></div> 
+    <div className="card-title">{title}</div>
+    </Link>
+
+    )
+  }

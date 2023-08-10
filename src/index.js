@@ -15,7 +15,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/accomodation/:id" element={<Accomodation />} />
-        <Route path="/not-found" element={<NotFound />} /> {/* Specific 404 route */}
+        <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

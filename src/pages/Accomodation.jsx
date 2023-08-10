@@ -21,10 +21,6 @@ export default function Accomodation() {
     return null;
   }
 
-
-
-
-
   const index = findIndexById(logements, id);
   const images = logements[index].pictures;
   const title = logements[index].title;

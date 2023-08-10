@@ -1,9 +1,15 @@
 header {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
   align-items: center;
   width: 100%;
   height: 100%;
+  gap: 50px;
+}
+
+.logo {
+  max-height: 211px;
 }
 
 nav {
@@ -30,4 +36,28 @@ a:hover {
 
 a.active {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    gap: 20px;
+  }
+  
+  .logo {
+    max-height: 145px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .logo {
+    width: 145px;
+    height: auto;
+  }  
 }
