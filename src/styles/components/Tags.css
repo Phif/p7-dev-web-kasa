@@ -20,7 +20,18 @@
 .tag span {
   text-align: center;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .tag {
+    height: 18px;
+    min-width: 84px;
+    border-radius: 5px;
+  }
+
+  .tag span {
+    font-size: 10px;
+  }
 }

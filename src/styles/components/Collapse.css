@@ -32,10 +32,20 @@
 .content-inner {
   padding: 20px;
   font-weight: 400;
-  color: #ff6060;
+  color: var(--primary-color);
 }
 
 .collapse-arrow {
   height: 32px;
   transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .collapse-header {
+    font-size: 13px;
+  }
+
+  .collapse-arrow {
+    width: 16px;
+  }
 }

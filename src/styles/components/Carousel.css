@@ -1,7 +1,7 @@
 .carousel-container {
   margin-top: 25px;
   position: relative;
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;
@@ -18,7 +18,7 @@
 
 .carousel-image {
   display: block;
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   object-fit: cover;
 }

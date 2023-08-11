@@ -15,16 +15,16 @@
   > h1, p {
     margin: 0;
   }
-
+  
   > h1 {
     font-size: 36px;
     font-weight: 500;
   }
-
+  
   > p {
     margin-top: 5px;
   }
-
+  
   > .tags-container {
     margin-top: 20px;
   }
@@ -41,10 +41,62 @@
 .hero-dropdowns {
   display: flex;
   flex-flow: row nowrap;
-  gap: 100px;
+  gap: 10%;
 }
 
 .hero-dropdowns div {
   width: 100%;
   font-size: 18px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hero-data-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .hero-data-left {
+    > h1 {
+      font-size: 18px;
+    }
+    
+    > p {
+      font-size: 14px;
+    }
+  }
+  
+  .hero-data-right {
+    align-items: center;
+    flex-direction: row-reverse;
+    align-self: normal;
+    
+    > .rating {
+      gap: 10px;
+    }
+    .rating img {
+      height: 13px;
+    }
+    
+    .host p {
+      font-size: 12px;
+    }
+    
+    .host img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .hero-dropdowns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-dropdowns div {
+    width: 100%;
+    font-size: 13px;
+  }
 }
