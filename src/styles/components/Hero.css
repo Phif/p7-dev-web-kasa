@@ -11,19 +11,15 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-
-  > h1,
-  p {
-    margin: 0;
-  }
-
+  
   > h1 {
+    margin: 0;
     font-size: 36px;
     font-weight: 500;
   }
-
+  
   > p {
-    margin-top: 5px;
+    margin: 5px 0 0 0;
   }
 
   > .tags-container {

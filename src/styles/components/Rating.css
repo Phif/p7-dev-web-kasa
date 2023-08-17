@@ -10,7 +10,7 @@
 
 @media only screen and (max-width: 768px) {
   .rating {
-    gap: 10px;
+    gap: 8px;
   }
 
   .rating img {

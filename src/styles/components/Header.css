@@ -14,7 +14,7 @@ header {
 
 nav {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
