@@ -16,35 +16,24 @@ export default function Carousel(props) {
   };
 
   return (
-    <div className="carousel-container">
-      <div className="carousel">
-        <div
-          className="carousel-inner"
-          style={{
-            transform: `translateX(-${currentIndex * 1240}px)`,
-            transition: 'transform 0.5s ease',
-          }}
-        >
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Slide ${index}`}
-              className="carousel-image"
-              style={{ objectFit: 'cover', height: '415px', borderRadius: '25px' }}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="carousel-nav">
-        <button className="prev-button" onClick={handlePrev}>
-          <img src={arrowLeft} alt="Previous" />
-        </button>
-        <button className="next-button" onClick={handleNext}>
-          <img src={arrowRight} alt="Next" />
-        </button>
-      </div>
-        <span className="carousel-counter">{`${currentIndex + 1}/${images.length}`}</span>
+    <div className="carousel">
+      {images.length > 1 && (
+        <button className="carousel-button carousel-prev" onClick={handlePrev}>
+        <img src={arrowLeft} alt='arrowLeft' />
+      </button>
+        )}
+
+        {images.length > 1 && (
+          <button className="carousel-button carousel-next" onClick={handleNext}>
+        <img src={arrowRight} alt='arrowRight' />
+      </button>
+        )}
+
+
+      {images.length > 1 && (
+      <span className="carousel-counter">{currentIndex + 1}/{images.length}</span>
+      )}
+      <img className="carousel-image" src={images[currentIndex]} alt='carousel' />
     </div>
-  );
+  )
 };
