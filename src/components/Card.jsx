@@ -5,10 +5,10 @@ export default function Card(props) {
   const { id, title, src } = props;
 
   return (
-    <Link to={`/accomodation/${id}`} className="card" key={id}>
+    <Link to={`/accomodation/${id}`} className='card' key={id}>
       <img src={src} alt={title} />
-      <div className="gradient-overlay"></div>
-      <div className="card-title">{title}</div>
+      <div className='gradient-overlay'></div>
+      <div className='card-title'>{title}</div>
     </Link>
   )
 }

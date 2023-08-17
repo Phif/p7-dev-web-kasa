@@ -19,15 +19,15 @@ export default function Collapse(props) {
   };
 
   return (
-    <div className="collapse">
-      <div className="collapse-header" onClick={toggleContent}>
+    <div className='collapse'>
+      <div className='collapse-header' onClick={toggleContent}>
         {title}
-        <img className="collapse-arrow" src={arrowDownD} alt="arrow" style={isOpen ? { transform: 'rotate(180deg)' } : {}} />
+        <img className='collapse-arrow' src={arrowDownD} alt='arrow' style={isOpen ? { transform: 'rotate(180deg)' } : {}} />
       </div>
-      <div className="collapse-content" ref={contentRef}>
-        <div className="content-inner">
+      <div className='collapse-content' ref={contentRef}>
+        <div className='content-inner'>
           {typeof content === 'string' && content}
-          
+
           {Array.isArray(content) && content.map((item, index) => (
             <li key={index}>{item}</li>
           ))}

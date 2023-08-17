@@ -5,7 +5,7 @@ export default function Background(props) {
   const text = props.text;
 
   return (
-    <div className="background">
+    <div className='background'>
       <span>{text}</span>
       <img src={src} alt={text}></img>
     </div>
