@@ -1,6 +1,8 @@
 import '../styles/components/Collapse.css'
+
 import { useState, useRef } from 'react';
-import arrowDownD from '../assets/arrowDown.svg';
+
+import arrowDown from '../assets/arrowDown.svg';
 
 export default function Collapse(props) {
   const title = props.title;
@@ -22,7 +24,7 @@ export default function Collapse(props) {
     <div className='collapse'>
       <div className='collapse-header' onClick={toggleContent}>
         {title}
-        <img className='collapse-arrow' src={arrowDownD} alt='arrow' style={isOpen ? { transform: 'rotate(180deg)' } : {}} />
+        <img className='collapse-arrow' src={arrowDown} alt='arrow' style={isOpen ? { transform: 'rotate(180deg)' } : {}} />
       </div>
       <div className='collapse-content' ref={contentRef}>
         <div className='content-inner'>

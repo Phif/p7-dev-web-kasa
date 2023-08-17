@@ -1,5 +1,7 @@
 import '../styles/components/Carousel.css'
+
 import React, { useState } from 'react';
+
 import arrowLeft from '../assets/arrowLeft.svg'
 import arrowRight from '../assets/arrowRight.svg'
 

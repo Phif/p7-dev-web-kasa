@@ -1,4 +1,5 @@
 import '../styles/components/Rating.css';
+
 import starFull from '../assets/starFull.svg';
 import starEmpty from '../assets/starEmpty.svg';
 

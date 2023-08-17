@@ -1,4 +1,5 @@
 import '../styles/components/Hero.css';
+
 import Tags from './Tags';
 import Host from './Host';
 import Rating from './Rating';

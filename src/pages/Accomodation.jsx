@@ -1,10 +1,12 @@
 import '../styles/pages/Accomodation.css';
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+
 import logements from '../utils/logements.json'
 
 export default function Accomodation() {

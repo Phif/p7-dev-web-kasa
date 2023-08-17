@@ -1,6 +1,8 @@
 import '../styles/components/CardList.css'
-import logements from '../utils/logements.json'
+
 import Card from './Card'
+
+import logements from '../utils/logements.json'
 
 export default function CardList() {
   return (

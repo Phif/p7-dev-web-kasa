@@ -1,8 +1,10 @@
 import '../styles/pages/About.css';
+
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
+
 import background from '../assets/bgAbout.webp';
 import about from '../utils/about.json';
 

@@ -1,4 +1,5 @@
 import '../styles/components/Footer.css'
+
 import logoWhite from '../assets/logoWhite.svg';
 
 export default function Footer() {
