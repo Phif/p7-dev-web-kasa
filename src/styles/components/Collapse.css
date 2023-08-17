@@ -1,5 +1,5 @@
 .collapse {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .collapse-header {
@@ -12,7 +12,6 @@
   padding: 10px 15px;
   background-color: #ff6060;
   color: white;
-  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1;
@@ -34,6 +33,10 @@
   padding: 20px;
   font-weight: 400;
   color: var(--primary-color);
+}
+
+.content-inner li {
+  font-weight: 400;
 }
 
 .collapse-arrow {
