@@ -14,7 +14,7 @@ export default function Accomodation() {
   const logement = logements.find(logements => logements.id.toString() === id);
   useEffect(() => {
     if (!logement) {
-      navigate('/not-found', { replace: true }); 
+      navigate('/404', { replace: true }); 
     }
   }, [logement, navigate]);
 

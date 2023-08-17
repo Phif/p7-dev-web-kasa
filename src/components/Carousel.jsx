@@ -1,7 +1,7 @@
 import '../styles/components/Carousel.css'
 import React, { useState } from 'react';
-import arrowLeft from '../assets/arrowLeftD.svg'
-import arrowRight from '../assets/arrowRightD.svg'
+import arrowLeft from '../assets/arrowLeft.svg'
+import arrowRight from '../assets/arrowRight.svg'
 
 export default function Carousel(props) {
   const { images } = props;

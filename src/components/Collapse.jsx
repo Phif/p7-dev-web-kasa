@@ -1,6 +1,6 @@
 import '../styles/components/Collapse.css'
 import { useState, useRef } from 'react';
-import arrowDownD from '../assets/arrowDownD.svg';
+import arrowDownD from '../assets/arrowDown.svg';
 
 export default function Collapse(props) {
   const title = props.title;
