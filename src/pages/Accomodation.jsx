@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 import logements from '../utils/logements.json'
 
 export default function Accomodation() {
@@ -33,9 +34,12 @@ export default function Accomodation() {
 
   return (
     <div className='accomodation'>
+      <main>
       <Header />
       <Carousel images={images} />
       <Hero title={title} location={location} host={host} tags={tags} rating={rating} description={description} equipments={equipments} />
+      </main>
+      <Footer />
     </div>
   )
 }

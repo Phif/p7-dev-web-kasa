@@ -11,27 +11,29 @@
 
 html {
   scrollbar-gutter: stable;
+  color: var(--primary-color);
+  list-style-type: none;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  margin: auto;
+main {
   padding: 40px 100px;
   max-width: 1440px;
-
-  color: var(--primary-color);
-  list-style-type: none;
+  transition: padding 0.3s ease;
 }
 
 @media only screen and (max-width: 768px) {
-  body {
+  main {
     padding: 20px;
+    transition: padding 0.3s ease;
   }
 }
 

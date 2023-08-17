@@ -1,20 +1,21 @@
 .collapse {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .collapse-header {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
+  height: 52px;
   padding: 10px 15px;
   background-color: #ff6060;
-  border-radius: 5px;
+  color: white;
+  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-weight: 500;
-  color: white;
+  z-index: 1;
 }
 
 .collapse-header:hover {
@@ -36,13 +37,20 @@
 }
 
 .collapse-arrow {
-  height: 32px;
   transition: transform 0.3s ease;
 }
 
 @media only screen and (max-width: 768px) {
-  .collapse-header {
+  .collapse {
     font-size: 13px;
+  }
+
+  .collapse-header {
+    height: 30px;
+  }
+
+  .content-inner {
+    padding: 10px;
   }
 
   .collapse-arrow {

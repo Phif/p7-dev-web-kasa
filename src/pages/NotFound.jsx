@@ -1,10 +1,12 @@
 import '../styles/pages/NotFound.css';
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Link } from 'react-router-dom';
 
 export default function NotFound() {
   return (
     <div className='notfound'>
+      <main>
       <Header />
       <div className="notfound-container">
         <div className="notfound-text">
@@ -13,6 +15,8 @@ export default function NotFound() {
         </div>
         <Link to='/'>Retourner sur la page d’accueil</Link>
       </div>
+      </main>
+      <Footer />
     </div>
   )
 }

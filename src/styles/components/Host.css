@@ -1,6 +1,6 @@
 .host {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -19,4 +19,15 @@
   text-align: right;
   line-height: 1.5;
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .host p {
+    font-size: 12px;
+  }
+
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
 }

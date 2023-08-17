@@ -11,20 +11,21 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  
-  > h1, p {
+
+  > h1,
+  p {
     margin: 0;
   }
-  
+
   > h1 {
     font-size: 36px;
     font-weight: 500;
   }
-  
+
   > p {
     margin-top: 5px;
   }
-  
+
   > .tags-container {
     margin-top: 20px;
   }
@@ -32,10 +33,10 @@
 
 .hero-data-right {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 30px;
+  gap: 20px;
 }
 
 .hero-dropdowns {
@@ -46,9 +47,7 @@
 
 .hero-dropdowns div {
   width: 100%;
-  font-size: 18px;
 }
-
 
 @media only screen and (max-width: 768px) {
   .hero-data-container {
@@ -57,46 +56,26 @@
     flex-direction: column;
     margin: 20px 0;
   }
-  
+
   .hero-data-left {
     > h1 {
       font-size: 18px;
     }
-    
+
     > p {
       font-size: 14px;
     }
   }
-  
+
   .hero-data-right {
+    margin-top: 20px;
     align-items: center;
     flex-direction: row-reverse;
     align-self: normal;
-    
-    > .rating {
-      gap: 10px;
-    }
-    .rating img {
-      height: 13px;
-    }
-    
-    .host p {
-      font-size: 12px;
-    }
-    
-    .host img {
-      width: 32px;
-      height: 32px;
-    }
   }
-  
+
   .hero-dropdowns {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .hero-dropdowns div {
-    width: 100%;
-    font-size: 13px;
   }
 }

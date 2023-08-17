@@ -1,5 +1,8 @@
-.notfound {
-  margin-bottom: 30px;
+.not-found {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .notfound-container {
