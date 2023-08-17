@@ -28,6 +28,16 @@
   transition: all 0.3s ease;
 }
 
+.carousel-button img:hover {
+  height: 90px;
+  transition: all 0.3s ease;
+}
+
+.carousel-button img:active {
+  height: 80px;
+  transition: all 0.1s ease;
+}
+
 .carousel-prev {
   left: 10px;
 }
@@ -52,10 +62,20 @@
     height: 255px;
     transition: all 0.3s ease;
   }
-
+  
   .carousel-button img {
     height: 20px;
     transition: all 0.3s ease;
+  }
+  
+  .carousel-button img:hover {
+    height: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-button img:active {
+    height: 20px;
+    transition: all 0.1s ease;
   }
 
   .carousel-counter {
