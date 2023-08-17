@@ -42,7 +42,7 @@ a.active {
   header {
     gap: 20px;
   }
-  
+
   .logo {
     max-height: 145px;
   }
@@ -50,14 +50,14 @@ a.active {
   nav {
     gap: 20px;
   }
-  
+
   nav a {
     text-transform: uppercase;
     font-size: 12px;
   }
-  
+
   .logo {
     width: 145px;
     height: auto;
-  }  
+  }
 }

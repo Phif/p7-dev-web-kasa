@@ -18,10 +18,10 @@ export default function Hero(props) {
           <Rating rating={props.rating} />
         </div>
       </div>
-        <div className='hero-dropdowns'>
-          <Collapse title='Description' content={props.description} />
-          <Collapse title='Équipements' content={props.equipments} />
-        </div>
+      <div className='hero-dropdowns'>
+        <Collapse title='Description' content={props.description} />
+        <Collapse title='Équipements' content={props.equipments} />
+      </div>
     </div>
   )
 }

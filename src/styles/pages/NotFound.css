@@ -44,18 +44,17 @@
   transition: all 0.3s ease;
 }
 
-
 @media only screen and (max-width: 768px) {
   .notfound-container h1 {
     font-size: 96px;
     transition: all 0.3s ease;
   }
-  
+
   .notfound-container h2 {
     font-size: 18px;
     transition: all 0.3s ease;
   }
-  
+
   .notfound-container a {
     font-size: 14px;
     transition: all 0.3s ease;

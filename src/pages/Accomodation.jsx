@@ -10,11 +10,11 @@ import logements from '../utils/logements.json'
 export default function Accomodation() {
   const { id } = useParams();
   const navigate = useNavigate();
-  
+
   const logement = logements.find(logements => logements.id.toString() === id);
   useEffect(() => {
     if (!logement) {
-      navigate('/404', { replace: true }); 
+      navigate('/404', { replace: true });
     }
   }, [logement, navigate]);
 
@@ -35,9 +35,9 @@ export default function Accomodation() {
   return (
     <div className='accomodation'>
       <main>
-      <Header />
-      <Carousel images={images} />
-      <Hero title={title} location={location} host={host} tags={tags} rating={rating} description={description} equipments={equipments} />
+        <Header />
+        <Carousel images={images} />
+        <Hero title={title} location={location} host={host} tags={tags} rating={rating} description={description} equipments={equipments} />
       </main>
       <Footer />
     </div>
