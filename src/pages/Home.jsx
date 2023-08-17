@@ -10,7 +10,7 @@ export default function Home() {
     <div className='home'>
       <main>
         <Header />
-        <Banner src={background} text='Chez vous, partout et ailleurs' />
+        <Banner src={background} text={'Chez vous, \npartout et ailleurs'} />
         <CardList />
       </main>
       <Footer />
