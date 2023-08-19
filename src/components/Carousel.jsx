@@ -20,20 +20,17 @@ export default function Carousel(props) {
   return (
     <div className='carousel'>
       {images.length > 1 && (
-        <button className='carousel-button carousel-prev' onClick={handlePrev}>
-          <img src={arrowLeft} alt='arrowLeft' />
-        </button>
-      )}
+        <>
+          <button className='carousel-button carousel-prev' onClick={handlePrev}>
+            <img src={arrowLeft} alt='arrowLeft' />
+          </button>
 
-      {images.length > 1 && (
-        <button className='carousel-button carousel-next' onClick={handleNext}>
-          <img src={arrowRight} alt='arrowRight' />
-        </button>
-      )}
+          <button className='carousel-button carousel-next' onClick={handleNext}>
+            <img src={arrowRight} alt='arrowRight' />
+          </button>
 
-
-      {images.length > 1 && (
-        <span className='carousel-counter'>{currentIndex + 1}/{images.length}</span>
+          <span className='carousel-counter'>{currentIndex + 1}/{images.length}</span>
+        </>
       )}
       <img className='carousel-image' src={images[currentIndex]} alt='carousel' />
     </div>
