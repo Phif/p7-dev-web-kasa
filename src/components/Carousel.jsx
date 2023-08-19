@@ -10,11 +10,11 @@ export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((index) => (index + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex((index) => (index - 1 + images.length) % images.length);
   };
 
   return (
