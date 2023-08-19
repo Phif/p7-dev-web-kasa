@@ -1,38 +1,36 @@
 import '../styles/pages/Accomodation.css';
-
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 
-import logements from '../utils/logements.json'
-
 export default function Accomodation() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [accomodation, setAccomodation] = useState(null);
 
-  const logement = logements.find(logements => logements.id.toString() === id);
   useEffect(() => {
-    if (!logement) {
-      navigate('/404', { replace: true });
-    }
-  }, [logement, navigate]);
+    fetch('/logements.json')
+      .then(response => response.json())
+      .then(data => {
+        const foundAccomodation = data.find(item => item.id.toString() === id);
+        setAccomodation(foundAccomodation);
+        if (!foundAccomodation) {
+          navigate('/404', { replace: true });
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching data: ", error);
+      });
+  }, [id, navigate]);
 
-  if (!logement) {
+  if (!accomodation) {
     return null;
   }
 
-  const index = findIndexById(logements, id);
-  const images = logements[index].pictures;
-  const title = logements[index].title;
-  const location = logements[index].location;
-  const host = logements[index].host;
-  const tags = logements[index].tags;
-  const rating = logements[index].rating;
-  const description = logements[index].description;
-  const equipments = logements[index].equipments;
+  const { pictures: images, title, location, host, tags, rating, description, equipments } = accomodation;
 
   return (
     <div className='accomodation'>
@@ -43,15 +41,5 @@ export default function Accomodation() {
       </main>
       <Footer />
     </div>
-  )
-}
-
-function findIndexById(array, targetId) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].id === targetId) {
-      return i;
-    }
-  }
-
-  return -1;
+  );
 }
