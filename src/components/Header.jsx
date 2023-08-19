@@ -7,7 +7,7 @@ import logo from '../assets/logo.svg'
 export default function Header() {
   return (
     <header>
-      <Link to='/'><img className='logo' src={logo} alt='Kasa'></img></Link>
+      <Link to='/'><img className='logo' src={logo} alt='Kasa' /></Link>
       <nav>
         <NavLink to='/'>
           Accueil

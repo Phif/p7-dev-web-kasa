@@ -3,10 +3,11 @@ header {
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 50px;
   width: 100%;
-  height: 100%;
   gap: 50px;
-  margin-bottom: 50px;
 }
 
 .logo {
@@ -40,6 +41,8 @@ a.active {
 
 @media only screen and (max-width: 768px) {
   header {
+    margin: 0;
+    padding: 20px;
     gap: 20px;
   }
 

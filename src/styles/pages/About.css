@@ -1,21 +1,14 @@
-.about {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .collapse-container {
-  max-width: 1020px;
   display: flex;
-  margin: 30px auto 0 auto;
   flex-flow: column nowrap;
+  max-width: 1020px;
+  margin-top: 50px;
   gap: 30px;
 }
 
 @media only screen and (max-width: 768px) {
   .collapse-container {
+    margin-top: 20px;
     gap: 20px;
   }
 }

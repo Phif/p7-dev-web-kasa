@@ -1,10 +1,8 @@
 import '../styles/pages/Accomodation.css';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
 
 export default function Accomodation() {
   const { id } = useParams();
@@ -33,13 +31,9 @@ export default function Accomodation() {
   const { pictures: images, title, location, host, tags, rating, description, equipments } = accomodation;
 
   return (
-    <div className='accomodation'>
-      <main>
-        <Header />
-        <Carousel images={images} />
-        <Hero title={title} location={location} host={host} tags={tags} rating={rating} description={description} equipments={equipments} />
-      </main>
-      <Footer />
+    <div className='page'>
+      <Carousel images={images} />
+      <Hero title={title} location={location} host={host} tags={tags} rating={rating} description={description} equipments={equipments} />
     </div>
   );
 }
