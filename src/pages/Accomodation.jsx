@@ -52,6 +52,6 @@ function findIndexById(array, targetId) {
       return i;
     }
   }
-  // If the target ID is not found in the array, you can return -1 or any other value to indicate that it doesn't exist.
+
   return -1;
 }
